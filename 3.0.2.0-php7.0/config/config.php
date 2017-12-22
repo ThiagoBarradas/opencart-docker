@@ -7,7 +7,7 @@ define('HTTPS_SERVER', 'http://localhost/');
 define('DIR_APPLICATION', '/app/catalog/');
 define('DIR_SYSTEM', '/app/system/');
 define('DIR_IMAGE', '/app/image/');
-define('DIR_STORAGE', . '/app-pvt/storage/');
+define('DIR_STORAGE', '/app-pvt/storage/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
 define('DIR_CONFIG', DIR_SYSTEM . 'config/');
