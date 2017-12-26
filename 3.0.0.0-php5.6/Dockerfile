@@ -2,7 +2,7 @@ FROM thiagobarradas/lamp:php-5.6
 MAINTAINER Thiago Barradas <th.barradas@gmail.com>
 
 # VARIABLES
-ENV OPENCART_VERSION=3.0.0s.0
+ENV OPENCART_VERSION=3.0.0.0
 ENV ADMIN_USERNAME="admin" 
 ENV ADMIN_EMAIL="admin-opencart@mailinator.com" 
 ENV ADMIN_PASSWORD="Mudar123"
