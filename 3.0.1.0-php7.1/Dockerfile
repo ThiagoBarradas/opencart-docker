@@ -27,7 +27,7 @@ COPY config/admin-config.php /var/www/html/admin/_config.php
 RUN rm -rf tmp
 RUN apt purge && apt-get autoremove -y && apt-get clean
 
-# COPY SCRIPT TO SETUP MAGENTO
+# COPY SCRIPT TO SETUP OPENCART
 COPY scripts/supervisord-zopencart.conf /etc/supervisor/conf.d/supervisord-zopencart.conf
 COPY scripts/setup-opencart.sh /setup-opencart.sh
 
