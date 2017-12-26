@@ -3,6 +3,9 @@ MAINTAINER Thiago Barradas <th.barradas@gmail.com>
 
 # VARIABLES
 ENV OPENCART_VERSION=3.0.2.0
+ENV ADMIN_USERNAME="admin" 
+ENV ADMIN_EMAIL="admin-opencart@mailinator.com" 
+ENV ADMIN_PASSWORD="Mudar123"
 
 # GET OPENCART FILES
 WORKDIR /var/www/html
@@ -17,12 +20,8 @@ RUN unzip opencart-$OPENCART_VERSION.zip
 WORKDIR /var/www/html/tmp/opencart-$OPENCART_VERSION
 RUN composer install
 RUN cp -a upload/. /var/www/html
-COPY config/config.php /var/www/html/config.php
-COPY config/admin-config.php /var/www/html/admin/config.php
-RUN rm -f /var/www/html/config-dist.php 
-RUN rm -f /var/www/html/admin/config-dist.php /var/www/html/admin/config.php
-RUN mkdir /app-pvt && mkdir /app-pvt/storage 
-RUN mv /app/system/storage/* /app-pvt/storage && chmod -R 777 /app-pvt/storage
+COPY config/config.php /var/www/html/_config.php
+COPY config/admin-config.php /var/www/html/admin/_config.php
 
 # CLEAN TMP FILES
 RUN rm -rf tmp
