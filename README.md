@@ -7,7 +7,7 @@ All in one container (PHP + MySQL + Apache + Opencart with Sample Data) for test
 See more about this images in:
 [https://hub.docker.com/r/thiagobarradas/opencart](https://hub.docker.com/r/thiagobarradas/opencart/)
 
-## Do you liked? Please, make a donate :v:
+### Did you like it? Please, make a donate :)
 
 if you liked this project, please make a contribution and help to keep this and other initiatives, send me some Satochis.
 
